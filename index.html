@@ -22,46 +22,47 @@
   <h3 align="center">NLP фильтры</h3>
   <div class="block">
     <div class="select-wrap">
-      <select name="" class="dws-menu">
+      <select name="" class="dws-menu" onchange="window.location.href=this.options[this.selectedIndex].value">
         <option value="">Сентимент анализ</option>
-        <option value="">положительная оценка</option>
-        <option value="">негативная оценка</option>
+        <option value="./pages/sentiment_pos.html">положительная оценка</option>
+        <option value="./pages/sentiment_neg.html">негативная оценка</option>
       </select>
-      <form action="./sentiment.html">
-        <button type="submit" class="c-button">Найти</button>
-      </form>
+<!--      <form action="./sentiment_pos.html">-->
+<!--        <button type="submit" class="c-button">Найти</button>-->
+<!--      </form>-->
     </div>
   </div>
   <div class="block">
     <div class="select-wrap">
-      <select class="dws-menu">
+      <select class="dws-menu" onchange="window.location.href=this.options[this.selectedIndex].value">
         <option value="">Цвет</option>
-        <option value="">Красный</option>
-        <option value="">Черный</option>
-        <option value="">Желтый</option>
-        <option value="">Зеленый</option>
-        <option value="">Серый</option>
-        <option value="">Синий</option>
-        <option value="">Белый</option>
+        <option value="./pages/colour_red.html">Красный</option>
+        <option value="./pages/colour_black.html">Черный</option>
+        <option value="./pages/colour_grey.html">Серый</option>
+        <option value="./pages/colour_green.html">Зеленый</option>
+        <option value="./pages/colour_white.html">Белый</option>
+        <option value="./pages/colour_blue.html">Синий</option>
+        <option value="./pages/colour_brown.html">Коричневый</option>
+        <option value="./pages/colour_pink.html">Розовый</option>
+        <option value="./pages/colour_yellow.html">Желтый</option>
       </select>
     </div>
-    <form action="./colour.html">
-    <button type="submit" class="c-button">Найти</button>
-    </form>
+<!--    <form action="sentiment_pos.html">-->
+<!--    <button type="submit" class="c-button">Найти</button>-->
+<!--    </form>-->
   </div>
   <div class="block">
     <div class="select-wrap">
-      <select class="dws-menu">
+      <select class="dws-menu" onchange="window.location.href=this.options[this.selectedIndex].value">
         <option value="">Погода</option>
-        <option value="">ясно</option>
-        <option value="">пасмурно</option>
-        <option value="">дождь</option>
-        <option value="">снег</option>
+        <option value="./pages/weather_sun.html">Ясно</option>
+        <option value="./pages/weather_rain.html">Пасмурно/дождливо</option>
+        <option value="./pages/weather_freeze.html">Морозно</option>
       </select>
     </div>
-    <form action="./weather.html">
-      <button type="submit" class="c-button">Найти</button>
-    </form>
+<!--    <form action="./weather.html">-->
+<!--      <button type="submit" class="c-button">Найти</button>-->
+<!--    </form>-->
   </div>
 </section>
 
